@@ -12,13 +12,14 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
+Plugin 'rking/ag.vim'
 " Plugin 'airblade/vim-gitgutter'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 " Plugin 'tpope/vim-fugitive'
 " Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
+" Plugin 'git://git.wincent.com/command-t.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -35,8 +36,10 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-set ai
-set ruler
-set expandtab
 syntax on
-set shiftwidth=4
+set ai
+set hlsearch
+set ruler
+"set number
+set expandtab
+set shiftwidth=2
