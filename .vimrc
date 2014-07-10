@@ -46,14 +46,14 @@ filetype plugin indent on    " required
 syntax on
 
 set ruler
-"set number
+set number
 set hlsearch
 set ai
 set expandtab
 set shiftwidth=2
 syntax enable
 set background=dark
-" colorscheme solarized
+colorscheme solarized
 
 "map <C-[> :tabp <CR>
 "map <C-]> :tabn <CR>
