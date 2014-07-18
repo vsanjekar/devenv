@@ -58,25 +58,35 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-"map <C-[> :tabp <CR>
-"map <C-]> :tabn <CR>
-"tab mappings
-" shorten :tabnew to :tn, :tabp to :th, :tabn to :tl
-"ca tn tabnew
-" ca tp tabp
-" ca tn tabn
-" CTRL-Tab is next tab
-" map <C-Tab> <Esc>:tabnext<CR>
-"noremap <C-Tab> :<C-U>tabnext<CR>
-"inoremap <C-Tab> <C-\><C-N>:tabnext<CR>
-"cnoremap <C-Tab> <C-C>:tabnext<CR>
-" CTRL-SHIFT-Tab is previous tab
-"noremap <C-S-Tab> :<C-U>tabprevious<CR>
-"inoremap <C-S-Tab> <C-\><C-N>:tabprevious<CR>
-" cnoremap <C-S-Tab> <C-C>:tabprevious<CR>
-
 " Use pathogen to easily modify the runtime path to include all
 " plugins under the ~/.vim/bundle directory
 " call pathogen#helptags()
 " call pathogen#runtime_append_all_bundles()
 " execute pathogen#infect()
+
+" Useful mappings for managing tabs:
+map <leader>tn :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove
+" Opens a new tab with the current buffer's path
+" Super useful when editing files in the same directory
+map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
+
+"map <C-[> :tabp <CR>
+"map <C-]> :tabn <CR>
+"tab mappings
+" shorten :tabnew to :tn, :tabp to :th, :tabn to :tl
+" ca tn tabnew
+" ca tp tabp
+" ca tn tabn
+" CTRL-Tab is next tab
+" map <C-Tab> <Esc>:tabnext<CR>
+" noremap <C-Tab> :<C-U>tabnext<CR>
+" inoremap <C-Tab> <C-\><C-N>:tabnext<CR>
+" cnoremap <C-Tab> <C-C>:tabnext<CR>
+" CTRL-SHIFT-Tab is previous tab
+" noremap <C-S-Tab> :<C-U>tabprevious<CR>
+" inoremap <C-S-Tab> <C-\><C-N>:tabprevious<CR>
+" cnoremap <C-S-Tab> <C-C>:tabprevious<CR>
+
