@@ -1,4 +1,4 @@
-#Prompt and prompt colors
+# Prompt and prompt colors
 # 30m - Black
 # 31m - Red
 # 32m - Green
@@ -32,9 +32,11 @@ function prompt {
   # PS1="\[$GREEN\]\t\[$RED\]-\[$BLUE\]\u\[$YELLOW\]\[$YELLOW\]\w\[\033[m\]\[$MAGENTA\]\$(__git_ps1)\[$WHITE\]\$ "
   unamestr=`uname`
   if [[ "$unamestr" == 'Darwin' ]]; then
-    PS1="\[$BLACKBOLD\][\t]\[$GREEN\]\u@\h:\[$BLUE\]\w\[\033[m\]\[$YELLOW\]\$(__git_ps1)\[$BLUE\]\n>\[\033[m\] "
+    #PS1="\[$BLACKBOLD\][\t]\[$GREEN\]\u@\h:\[$BLUE\]\w\[\033[m\]\[$YELLOW\]\$(__git_ps1)\[$BLUE\]\n>\[\033[m\] "
+    PS1="$BLACKBOLD[\t]$GREEN\u@\h:$BLUE\w\[\033[m\]$YELLOW\$(__git_ps1)$BLUE\n>\[\033[m\] "
   else
     PS1="\[$BLACKBOLD\][\t]\[$RED\]\u@\h:\[$BLUE\]\w\[\033[m\]\[$YELLOW\]\$(__git_ps1)\[$BLUE\]\n>\[\033[m\] "
+    #PS1="$BLACKBOLD[\t]$RED\u@\h:$BLUE\w\[\033[m\]$YELLOW\$(__git_ps1)$BLUE\n>\[\033[m\] "
   fi
 
 }
@@ -51,6 +53,10 @@ else
   export LSCOLORS=ExFxCxDxBxegedabagacad
 fi
 
+export PROMPT_COMMAND=`history -a; history -r`
+
+export HISTFILESIZE= HISTSIZE= #HISTFILE=~/.bash4_history
+
 # Erase duplicates in bash history
 HISTCONTROL=ignoredups:ignorespace
 
@@ -62,11 +68,13 @@ export GREP_OPTIONS='--color=auto'
 
 # export aliases
 source ~/.alias
+source ~/.brightroll
 
 ###########################################################################################
 ## Development environment
 
 export PATH="/usr/local/bin:$PATH:~/bin"
+export PATH="$PATH:/usr/lib/php/pear/bin"
 
 # Set git autocompletion
 # - To install the necessary files, run:
@@ -74,23 +82,36 @@ export PATH="/usr/local/bin:$PATH:~/bin"
 #   sudo curl -o /etc/bash_completion.d/git-completion.bash \
 #   https://raw.github.com/git/git/master/contrib/completion/git-completion.bash
 # 
-#   sudo curl -o /etc/bash_completion.d/git-shell.sh \
-#   https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh
-#
 if [ -f /etc/bash_completion.d/git-completion.bash ]; then
   source /etc/bash_completion.d/git-completion.bash
 fi
-if [ -f /etc/bash_completion.d/git-shell.sh ]; then
-  source /etc/bash_completion.d/git-shell.sh
-fi
+#   sudo curl -o /etc/bash_completion.d/git-shell.sh \
+#   https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh
+#
+# if [ -f /etc/bash_completion.d/git-shell.sh ]; then
+#   source /etc/bash_completion.d/git-shell.sh
+# fi
+# Git and bash-completion: brew install git bash-completion
+# if [ -f $(brew --prefix)/etc/bash_completion ]; then
+#   . $(brew --prefix)/etc/bash_completion
+# fi
+
 
 # ssh hostname autocompletion
 complete -W "$(echo $(cat ~/.ssh/known_hosts | \
     cut -f 1 -d ' ' | sed -e s/,.*//g | \
     sort -u | grep -v "\["))" ssh
 
+# ssh key forwarding
+ssh-add
+
 # Load rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# added by Anaconda 1.7.0 installer
+export PATH="/Users/vinay/anaconda/bin:$PATH"
+export PYTHONPATH="/Users/vinay/anaconda/lib/python2.7/site-packages"
+
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+

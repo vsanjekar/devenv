@@ -47,6 +47,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 syntax on
+syntax enable
 
 set ruler
 set number
@@ -54,7 +55,7 @@ set hlsearch
 set ai
 set expandtab
 set shiftwidth=2
-syntax enable
+set noswapfile
 set background=dark
 colorscheme solarized
 
