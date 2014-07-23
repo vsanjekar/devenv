@@ -23,6 +23,7 @@ Plugin 'bling/vim-airline'
 " Color scheme
 Plugin 'altercation/vim-colors-solarized'
 
+" Code browsing
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
@@ -66,13 +67,19 @@ colorscheme solarized
 " execute pathogen#infect()
 
 " Useful mappings for managing tabs:
-map <leader>tn :tabnew<cr>
-map <leader>to :tabonly<cr>
-map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove
+map <leader>tt :tabnew<cr>
 " Opens a new tab with the current buffer's path
 " Super useful when editing files in the same directory
 map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tc :tabclose<cr>
+map <leader>to :tabonly<cr>
+map <leader>tn :tabnext<cr>
+map <leader>tp :tabprevious<cr>
+map <leader>tf :tabfirst<cr>
+map <leader>tl :tablast<cr>
+map <leader>tm :tabmove
 
 "map <C-[> :tabp <CR>
 "map <C-]> :tabn <CR>
