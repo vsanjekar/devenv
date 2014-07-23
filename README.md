@@ -1,25 +1,25 @@
 vinay_devenv
 ============
 
-* Install Vundle
+* *Install Vundle*
 
-* Install rbenv
+* *Install rbenv*
 
-* Copy the repo home/git
+* *Copy the repo home/git*
 
 
-* Bash
+* *Bash*
 * OSX:
 
 ln -s ~/git/vinay_devenv/.bash_profile ~/.bash_profile
+
+ln -s ~/git/vinay_devenv/.alias ~/.alias
 
 * Linux:
 
 ln -s ~/git/vinay_devenv/.bashrc ~/.bashrc
 
-
 ln -s ~/git/vinay_devenv/.alias ~/.alias
 
-* Vim
+* *Vim*
 ln -s ~/git/vinay_devenv/.vimrc ~/.vimrc
-
