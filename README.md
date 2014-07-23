@@ -2,13 +2,10 @@ vinay_devenv
 ============
 
 * Install Vundle
-----------------
 
 * Install rbenv
----------------
 
-* ***Copy the repo home/git***
-------------------------
+* Copy the repo home/git
 
 
 * Bash
