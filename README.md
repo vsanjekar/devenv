@@ -7,7 +7,7 @@ vinay_devenv
 * Install rbenv
 ---------------
 
-* Copy the repo home/git
+* ***Copy the repo home/git***
 ------------------------
 
 
