@@ -1,4 +1,11 @@
 [user]
-	name = Vinay S
-[credential]
-	helper = osxkeychain
+	name = Vinay Sanjekar
+[push]
+	default = matching
+[color]
+	ui = true
+[core]
+        excludesfile = ~/.gitignore
+	editor = vim
+[merge]
+	tool = vimdiff
