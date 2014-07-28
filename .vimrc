@@ -29,6 +29,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'rking/ag.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'rodjek/vim-puppet'
 
 
 " All of your Plugins must be added before the following line
