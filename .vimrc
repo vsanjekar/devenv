@@ -21,7 +21,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
 
 " Color scheme
-Plugin 'altercation/vim-colors-solarized'
+" Plugin 'altercation/vim-colors-solarized'
 
 " Code browsing
 Plugin 'scrooloose/nerdtree'
@@ -61,7 +61,7 @@ set expandtab
 set shiftwidth=2
 set noswapfile
 set background=dark
-colorscheme solarized
+" colorscheme solarized
 
 " Use pathogen to easily modify the runtime path to include all
 " plugins under the ~/.vim/bundle directory
