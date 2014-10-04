@@ -31,7 +31,7 @@ Plugin 'rking/ag.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'rodjek/vim-puppet'
 " Requires vim (7.3.584/7.4), build-essential, cmake, python-dev and setup
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 
 
 " All of your Plugins must be added before the following line
