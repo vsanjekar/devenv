@@ -21,7 +21,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
 
 " Color scheme
-Plugin 'altercation/vim-colors-solarized'
+" Plugin 'altercation/vim-colors-solarized'
 
 " Code browsing
 Plugin 'scrooloose/nerdtree'
@@ -31,7 +31,8 @@ Plugin 'rking/ag.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'rodjek/vim-puppet'
 Plugin 'derekwyatt/vim-scala'
-
+" Requires vim (7.3.584/7.4), build-essential, cmake, python-dev and setup
+" Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -60,7 +61,7 @@ set expandtab
 set shiftwidth=2
 set noswapfile
 set background=dark
-colorscheme solarized
+" colorscheme solarized
 
 " Use pathogen to easily modify the runtime path to include all
 " plugins under the ~/.vim/bundle directory
