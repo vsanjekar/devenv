@@ -30,6 +30,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'rking/ag.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'rodjek/vim-puppet'
+Plugin 'derekwyatt/vim-scala'
 
 
 " All of your Plugins must be added before the following line
@@ -98,4 +99,3 @@ map <leader>tm :tabmove
 " noremap <C-S-Tab> :<C-U>tabprevious<CR>
 " inoremap <C-S-Tab> <C-\><C-N>:tabprevious<CR>
 " cnoremap <C-S-Tab> <C-C>:tabprevious<CR>
-

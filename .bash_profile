@@ -73,9 +73,6 @@ source ~/.brightroll
 ###########################################################################################
 ## Development environment
 
-export PATH="/usr/local/bin:$PATH:~/bin"
-export PATH="$PATH:/usr/lib/php/pear/bin"
-
 # Set git autocompletion
 # - To install the necessary files, run:
 #
@@ -109,9 +106,14 @@ ssh-add
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# added by Anaconda 1.7.0 installer
-export PATH="/Users/vinay/anaconda/bin:$PATH"
-export PYTHONPATH="/Users/vinay/anaconda/lib/python2.7/site-packages"
+# export PATH="/usr/local/bin:$PATH:~/bin"
+export PATH="$PATH:/usr/lib/php/pear/bin"
 
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/vinay/google-cloud-sdk/path.bash.inc'
+
+# The next line enables bash completion for gcloud.
+source '/Users/vinay/google-cloud-sdk/completion.bash.inc'

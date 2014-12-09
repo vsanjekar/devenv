@@ -21,3 +21,5 @@ alias tai='tai64nlocal'
 alias be='bundle exec'
 alias bers='bundle exec rake spec'
 alias ber='bundle exec rspec -cfd'
+
+curlproxy='curl --socks5 '\''localhost:9999'\'
