@@ -109,6 +109,8 @@ eval "$(rbenv init -)"
 # export PATH="/usr/local/bin:$PATH:~/bin"
 export PATH="$PATH:/usr/lib/php/pear/bin"
 
+export PYTHONPATH="/usr/local/lib/python2.7/site-packages"
+
 export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
 
