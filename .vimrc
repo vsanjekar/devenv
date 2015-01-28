@@ -19,18 +19,21 @@ Plugin 'gmarik/Vundle.vim'
 
 " Status bar
 Plugin 'bling/vim-airline'
-
+let g:airline#extensions#tabline#enabled = 1
 " Color scheme
 " Plugin 'altercation/vim-colors-solarized'
 
 " Code browsing
-Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'rking/ag.vim'
+Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'rodjek/vim-puppet'
+
+" Language specific
 Plugin 'derekwyatt/vim-scala'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'rodjek/vim-puppet'
 " Requires vim (7.3.584/7.4), build-essential, cmake, python-dev and setup
 " Plugin 'Valloric/YouCompleteMe'
 

@@ -102,13 +102,19 @@ complete -W "$(echo $(cat ~/.ssh/known_hosts | \
 # ssh key forwarding
 ssh-add
 
-# Load rbenv
+# MYSQL
+#export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+# This is a HACK
+unalias mysql
+unalias mysqladmin
+
+# rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# export PATH="/usr/local/bin:$PATH:~/bin"
-export PATH="$PATH:/usr/lib/php/pear/bin"
-
+# Python  'brew install python'
 export PYTHONPATH="/usr/local/lib/python2.7/site-packages"
 
-export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+# PHP
+# export PATH="/usr/local/bin:$PATH:~/bin"
+export PATH="$PATH:/usr/lib/php/pear/bin"
