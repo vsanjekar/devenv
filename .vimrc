@@ -17,18 +17,24 @@ Plugin 'gmarik/Vundle.vim'
 " Git plugin not hosted on GitHub
 " Plugin 'git://git.wincent.com/command-t.git'
 
-" Status bar
+" Look & Feel. Status bar
 Plugin 'bling/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
 " Color scheme
 " Plugin 'altercation/vim-colors-solarized'
 
 " Code browsing
+Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'rking/ag.vim'
-Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'myusuf3/numbers.vim'
+nnoremap <F3> :NumbersToggle<CR>
+nnoremap <F4> :NumbersOnOff<CR>
+Plugin 'bronson/vim-trailing-whitespace'
+" Plugin 'Valloric/YouCompleteMe'
 
 " Language specific
 Plugin 'derekwyatt/vim-scala'

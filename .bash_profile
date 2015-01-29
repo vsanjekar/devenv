@@ -76,21 +76,23 @@ source ~/.brightroll
 # Set git autocompletion
 # - To install the necessary files, run:
 #
-#   sudo curl -o /etc/bash_completion.d/git-completion.bash \
-#   https://raw.github.com/git/git/master/contrib/completion/git-completion.bash
+# sudo curl -o /etc/bash_completion.d/git-completion.bash \
+# https://raw.github.com/git/git/master/contrib/completion/git-completion.bash
 # 
-if [ -f /etc/bash_completion.d/git-completion.bash ]; then
-  source /etc/bash_completion.d/git-completion.bash
-fi
-#   sudo curl -o /etc/bash_completion.d/git-shell.sh \
-#   https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh
+# if [ -f /etc/bash_completion.d/git-completion.bash ]; then
+#   source /etc/bash_completion.d/git-completion.bash
+# fi
+#
+# sudo curl -o /etc/bash_completion.d/git-shell.sh \
+# https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh
 #
 # if [ -f /etc/bash_completion.d/git-shell.sh ]; then
 #   source /etc/bash_completion.d/git-shell.sh
 # fi
+#
 # Git and bash-completion: brew install git bash-completion
 # if [ -f $(brew --prefix)/etc/bash_completion ]; then
-#   . $(brew --prefix)/etc/bash_completion
+#  . $(brew --prefix)/etc/bash_completion
 # fi
 
 
@@ -103,7 +105,15 @@ complete -W "$(echo $(cat ~/.ssh/known_hosts | \
 ssh-add
 
 # MYSQL
-#export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+# brew install mysql
+# mysql_install_db --basedir=/usr/local/Cellar/mysql/5.6.22
+# mysql.server start/stop
+# mysql_install_db
+# mysql_secure_installation
+# After dmg installation
+#
+# export PATH=~/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
+# export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 # This is a HACK
 unalias mysql
 unalias mysqladmin
@@ -117,4 +127,4 @@ export PYTHONPATH="/usr/local/lib/python2.7/site-packages"
 
 # PHP
 # export PATH="/usr/local/bin:$PATH:~/bin"
-export PATH="$PATH:/usr/lib/php/pear/bin"
+# export PATH="$PATH:/usr/lib/php/pear/bin"
