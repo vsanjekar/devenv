@@ -74,27 +74,14 @@ source ~/.brightroll
 ## Development environment
 
 # Set git autocompletion
-# - To install the necessary files, run:
-#
-# sudo curl -o /etc/bash_completion.d/git-completion.bash \
-# https://raw.github.com/git/git/master/contrib/completion/git-completion.bash
-# 
-# if [ -f /etc/bash_completion.d/git-completion.bash ]; then
-#   source /etc/bash_completion.d/git-completion.bash
-# fi
-#
-# sudo curl -o /etc/bash_completion.d/git-shell.sh \
-# https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh
-#
-# if [ -f /etc/bash_completion.d/git-shell.sh ]; then
-#   source /etc/bash_completion.d/git-shell.sh
-# fi
-#
 # Git and bash-completion: brew install git bash-completion
 # if [ -f $(brew --prefix)/etc/bash_completion ]; then
-#  . $(brew --prefix)/etc/bash_completion
+#   . $(brew --prefix)/etc/bash_completion
 # fi
-
+# http://code-worrier.com/blog/autocomplete-git/
+if [ -f ~/.git-completion.bash ]; then
+  source ~/.git-completion.bash
+fi
 
 # ssh hostname autocompletion
 complete -W "$(echo $(cat ~/.ssh/known_hosts | \
@@ -110,13 +97,10 @@ ssh-add
 # mysql.server start/stop
 # mysql_install_db
 # mysql_secure_installation
-# After dmg installation
 #
+# After dmg installation
 # export PATH=~/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
 # export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
-# This is a HACK
-unalias mysql
-unalias mysqladmin
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"

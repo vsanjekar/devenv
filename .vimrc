@@ -19,7 +19,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Look & Feel. Status bar
 Plugin 'bling/vim-airline'
-let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
 " Color scheme
 " Plugin 'altercation/vim-colors-solarized'
 
@@ -30,7 +30,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'rking/ag.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
-Plugin 'myusuf3/numbers.vim'
+" Plugin 'myusuf3/numbers.vim'
 nnoremap <F3> :NumbersToggle<CR>
 nnoremap <F4> :NumbersOnOff<CR>
 Plugin 'bronson/vim-trailing-whitespace'
@@ -77,6 +77,12 @@ set background=dark
 " call pathogen#helptags()
 " call pathogen#runtime_append_all_bundles()
 " execute pathogen#infect()
+
+" Splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " Useful mappings for managing tabs:
 map <leader>tt :tabnew<cr>
