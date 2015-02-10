@@ -115,8 +115,8 @@ ssh-add
 # export PATH=~/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
 # export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 # This is a HACK
-unalias mysql
-unalias mysqladmin
+# unalias mysql
+# unalias mysqladmin
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
