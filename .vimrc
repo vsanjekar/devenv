@@ -64,6 +64,7 @@ syntax enable
 
 set ruler
 set number
+set incsearch
 set hlsearch
 set ai
 set expandtab
