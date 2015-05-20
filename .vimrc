@@ -68,9 +68,12 @@ set incsearch
 set hlsearch
 set ai
 set expandtab
-set shiftwidth=2
+set shiftwidth=4
 set noswapfile
 set background=dark
+set splitright
+" set splitbelow
+
 " colorscheme solarized
 
 " Use pathogen to easily modify the runtime path to include all

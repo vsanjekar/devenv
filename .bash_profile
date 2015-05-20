@@ -109,6 +109,10 @@ eval "$(rbenv init -)"
 # Python  'brew install python'
 export PYTHONPATH="/usr/local/lib/python2.7/site-packages"
 
+# brew install scala
+# brew install sbt
+SCALA_HOME=/usr/local/opt/scala/idea
+
 # PHP
 # export PATH="/usr/local/bin:$PATH:~/bin"
 # export PATH="$PATH:/usr/lib/php/pear/bin"
