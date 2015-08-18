@@ -63,7 +63,7 @@ syntax on
 syntax enable
 
 set ruler
-set number
+" set number
 set incsearch
 set hlsearch
 set ai
@@ -94,7 +94,6 @@ map <leader>tt :tabnew<cr>
 " Super useful when editing files in the same directory
 map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 map <leader>to :tabonly<cr>
-map <leader>tc :tabclose<cr>
 map <leader>tc :tabclose<cr>
 map <leader>to :tabonly<cr>
 map <leader>tn :tabnext<cr>
