@@ -44,7 +44,7 @@ vim
 :PluginInstall
 
 * Install YouCompleteMe
-* 
+
 cd ~/.vim/bundle/YouCompleteMe
 
 ./install.sh --clang-completer
