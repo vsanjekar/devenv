@@ -49,6 +49,8 @@ cd ~/.vim/bundle/YouCompleteMe
 
 ./install.sh --clang-completer
 
+cp ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py ~
+
 
 * GIT
 -----
