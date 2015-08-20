@@ -43,6 +43,12 @@ ln -s ~/github/vinay_devenv/.vimrc ~/.vimrc
 vim
 :PluginInstall
 
+* Install YouCompleteMe
+* 
+cd ~/.vim/bundle/YouCompleteMe
+
+./install.sh --clang-completer
+
 
 * GIT
 -----
