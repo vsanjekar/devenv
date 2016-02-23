@@ -32,11 +32,11 @@ function prompt {
   # PS1="\[$GREEN\]\t\[$RED\]-\[$BLUE\]\u\[$YELLOW\]\[$YELLOW\]\w\[\033[m\]\[$MAGENTA\]\$(__git_ps1)\[$WHITE\]\$ "
   unamestr=`uname`
   if [[ "$unamestr" == 'Darwin' ]]; then
-    #PS1="\[$BLACKBOLD\][\t]\[$GREEN\]\u@\h:\[$BLUE\]\w\[\033[m\]\[$YELLOW\]\$(__git_ps1)\[$BLUE\]\n>\[\033[m\] "
-    PS1="$BLACKBOLD[\t]$GREEN\u@\h:$BLUE\w\[\033[m\]$YELLOW\$(__git_ps1)$BLUE\n>\[\033[m\] "
+    #PS1="\[$BLACKBOLD\][\t]\[$GREEN\]\u@\h:\[$PURPLE\]\w\[\033[m\]\[$YELLOW\]\$(__git_ps1)\[$BLUE\]\n>\[\033[m\] "
+    PS1="$BLACKBOLD[\t]$GREEN\u@\h:\[$PURPLE\]\w\[\033[m\]$YELLOW\$(__git_ps1)$BLUE\n>\[\033[m\] "
   else
-    PS1="\[$BLACKBOLD\][\t]\[$RED\]\u@\h:\[$BLUE\]\w\[\033[m\]\[$YELLOW\]\$(__git_ps1)\[$BLUE\]\n>\[\033[m\] "
-    #PS1="$BLACKBOLD[\t]$RED\u@\h:$BLUE\w\[\033[m\]$YELLOW\$(__git_ps1)$BLUE\n>\[\033[m\] "
+    PS1="\[$BLACKBOLD\][\t]\[$RED\]\u@\h:\[$PURPLE\]\w\[\033[m\]\[$YELLOW\]\$(__git_ps1)\[$BLUE\]\n>\[\033[m\] "
+    #PS1="$BLACKBOLD[\t]$RED\u@\h:\[$PURPLE\]\w\[\033[m\]$YELLOW\$(__git_ps1)$BLUE\n>\[\033[m\] "
   fi
 
 }
@@ -116,3 +116,6 @@ SCALA_HOME=/usr/local/opt/scala/idea
 # PHP
 # export PATH="/usr/local/bin:$PATH:~/bin"
 # export PATH="$PATH:/usr/lib/php/pear/bin"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+export PATH="/usr/local/sbin:$PATH"
