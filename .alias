@@ -24,3 +24,6 @@ alias ber='bundle exec rspec -cfd'
 alias bera='bundle exec rspec spec/ -cfd'
 
 curlproxy='curl --socks5 '\''localhost:9999'\'
+
+# office aliases
+. ~/.alias_secret
