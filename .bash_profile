@@ -54,6 +54,9 @@ else
 fi
 
 export PROMPT_COMMAND=`history -a; history -r`
+if [ $ITERM_SESSION_ID ]; then
+  export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
+fi
 
 export HISTFILESIZE= HISTSIZE= #HISTFILE=~/.bash4_history
 
@@ -119,3 +122,4 @@ SCALA_HOME=/usr/local/opt/scala/idea
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 export PATH="/usr/local/sbin:$PATH"
+

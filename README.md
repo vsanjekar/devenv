@@ -55,3 +55,15 @@ cp ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py ~
 * GIT
 -----
 ln -s ~/github/vinay_devenv/.gitconfig ~/.gitconfig
+
+
+* Java
+------
+
+Jenv https://github.com/gcuisinier/jenv
+
+git clone https://github.com/gcuisinier/jenv.git ~/.jenv
+
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile
+
+echo 'eval "$(jenv init -)"' >> ~/.bash_profile
