@@ -15,6 +15,9 @@ alias gpo='git push origin'
 alias glog='git log --graph --decorate --pretty=oneline --abbrev-commit --all'
 #alias glog2='git log --graph --full-history --all --color --date=short --pretty=format:'%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%ad %aE %s''
 #alias gl='git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative'
+alias gfup='git fetch upstream master'
+alias gmup='git merge upstream/master'
+alias gup='git fetch upstream master; git merge upstream/master; git push origin master'
 
 alias tai='tai64nlocal'
 
