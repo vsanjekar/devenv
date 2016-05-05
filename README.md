@@ -1,4 +1,4 @@
-vinay_devenv
+my_devenv
 ============
 
 Use the setup script.
