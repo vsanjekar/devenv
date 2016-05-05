@@ -1,4 +1,4 @@
-my_devenv
+devenv
 ============
 
 Use the setup script.
@@ -13,15 +13,15 @@ Install rbenv
 ------
 * **OSX:**
 
-ln -s ~/github/my_devenv/.bash_profile ~/.bash_profile
+ln -s ~/github/devenv/.bash_profile ~/.bash_profile
 
-ln -s ~/github/my_devenv/.alias ~/.alias
+ln -s ~/github/devenv/.alias ~/.alias
 
 * **Linux:**
 
-ln -s ~/github/my_devenv/.bashrc ~/.bashrc
+ln -s ~/github/devenv/.bashrc ~/.bashrc
 
-ln -s ~/github/my_devenv/.alias ~/.alias
+ln -s ~/github/devenv/.alias ~/.alias
 
 * VIM
 -----
@@ -40,7 +40,7 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 * Use the vimrc with awesome plugins
 
-ln -s ~/github/my_devenv/.vimrc ~/.vimrc
+ln -s ~/github/devenv/.vimrc ~/.vimrc
 
 vim:PluginInstall
 
@@ -55,7 +55,7 @@ cp ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py ~
 
 * GIT
 -----
-ln -s ~/github/my_devenv/.gitconfig ~/.gitconfig
+ln -s ~/github/devenv/.gitconfig ~/.gitconfig
 
 
 * Java
