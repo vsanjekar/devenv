@@ -4,22 +4,24 @@ my_devenv
 Use the setup script.
 
 mkdir ~/github
-Copy the repo to ~/github
+
+Clone the repo to ~/github
+
 Install rbenv
 
 * Bash
 ------
 * **OSX:**
 
-ln -s ~/github/vinay_devenv/.bash_profile ~/.bash_profile
+ln -s ~/github/my_devenv/.bash_profile ~/.bash_profile
 
-ln -s ~/github/vinay_devenv/.alias ~/.alias
+ln -s ~/github/my_devenv/.alias ~/.alias
 
 * **Linux:**
 
-ln -s ~/github/vinay_devenv/.bashrc ~/.bashrc
+ln -s ~/github/my_devenv/.bashrc ~/.bashrc
 
-ln -s ~/github/vinay_devenv/.alias ~/.alias
+ln -s ~/github/my_devenv/.alias ~/.alias
 
 * VIM
 -----
@@ -38,10 +40,9 @@ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 * Use the vimrc with awesome plugins
 
-ln -s ~/github/vinay_devenv/.vimrc ~/.vimrc
+ln -s ~/github/my_devenv/.vimrc ~/.vimrc
 
-vim
-:PluginInstall
+vim:PluginInstall
 
 * Install YouCompleteMe
 
@@ -54,7 +55,7 @@ cp ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py ~
 
 * GIT
 -----
-ln -s ~/github/vinay_devenv/.gitconfig ~/.gitconfig
+ln -s ~/github/my_devenv/.gitconfig ~/.gitconfig
 
 
 * Java
