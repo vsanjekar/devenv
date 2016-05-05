@@ -37,8 +37,10 @@ Plugin 'bronson/vim-trailing-whitespace'
 " Plugin 'Valloric/YouCompleteMe'
 
 " Language specific
+Plugin 'ervandew/eclim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'motus/pig.vim'
 Plugin 'rodjek/vim-puppet'
 " Requires vim (7.3.584/7.4), build-essential, cmake, python-dev and setup
 " Plugin 'Valloric/YouCompleteMe'
