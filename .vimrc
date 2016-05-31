@@ -23,8 +23,9 @@ Plugin 'bling/vim-airline'
 " Color scheme
 " Plugin 'altercation/vim-colors-solarized'
 
-" Code browsing
+" Search and Code browsing
 Plugin 'scrooloose/nerdtree'
+" autocmd vimenter * NERDTree
 Plugin 'kien/ctrlp.vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'rking/ag.vim'
@@ -37,6 +38,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 " Plugin 'Valloric/YouCompleteMe'
 
 " Language specific
+Plugin 'scrooloose/syntastic'
 Plugin 'ervandew/eclim'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'elixir-lang/vim-elixir'

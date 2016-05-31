@@ -33,9 +33,9 @@ function prompt {
   unamestr=`uname`
   if [[ "$unamestr" == 'Darwin' ]]; then
     #PS1="\[$BLACKBOLD\][\t]\[$GREEN\]\u@\h:\[$PURPLE\]\w\[\033[m\]\[$YELLOW\]\$(__git_ps1)\[$BLUE\]\n>\[\033[m\] "
-    PS1="$BLACKBOLD[\t]$GREEN\u@\h:\[$PURPLE\]\w\[\033[m\]$YELLOW\$(__git_ps1)$BLUE\n>\[\033[m\] "
+    PS1="$BLACKBOLD[\d-\t]$GREEN\u@\h:\[$PURPLE\]\w\[\033[m\]$YELLOW\$(__git_ps1)$BLUE\n>\[\033[m\] "
   else
-    PS1="\[$BLACKBOLD\][\t]\[$RED\]\u@\h:\[$PURPLE\]\w\[\033[m\]\[$YELLOW\]\$(__git_ps1)\[$BLUE\]\n>\[\033[m\] "
+    PS1="\[$BLACKBOLD\][\d-\t]\[$RED\]\u@\h:\[$PURPLE\]\w\[\033[m\]\[$YELLOW\]\$(__git_ps1)\[$BLUE\]\n>\[\033[m\] "
     #PS1="$BLACKBOLD[\t]$RED\u@\h:\[$PURPLE\]\w\[\033[m\]$YELLOW\$(__git_ps1)$BLUE\n>\[\033[m\] "
   fi
 
